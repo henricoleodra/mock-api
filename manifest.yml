@@ -1,0 +1,10 @@
+---
+applications:
+  - name: mock-api
+    memory: 256M
+    disk_quota: 256M
+    instances: 10
+    command: node index.js
+    buildpack: nodejs_buildpack1_7_65
+    routes:
+      - route: https://mock-api.apps.pcf.it
